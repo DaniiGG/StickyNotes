@@ -4,6 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            background-color: aliceblue;
+            border: none;
+        }
+        #inputTitulo{
+            margin-top: 10px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        div{
+            background-color: #ffc547;
+            border: solid black;
+        }
+        
+
+        #app{
+            border: none;
+        }
+         h1 {
+            margin: 0;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        h2 {
+            margin-top: 5px;
+            padding: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+         button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        </style>
 </head>
 <body>
     <script src="Model.js"></script>
@@ -11,10 +67,12 @@
     <script src="Controlador.js"></script>
 
 
-    
-    <input type="text" name="" id="inputTitulo">
-    <input type="text" name="" id="inputTexto">
+    <div id="form">
+    <input  type="text" name="" placeholder="Titulo" id="inputTitulo">
+    <input type="text" name="" placeholder="Contenido" id="inputTexto">
     <button id="button" name="">+</button>
+    
     <div id="app"></div>
+</div>
 </body>
 </html>
